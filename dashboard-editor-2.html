@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DSI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dsi-body-dashboard">
+
+		<aside class="dsi-sidebar-1">
+			<div class="dsi-sidebar-top text-center">
+				<a href="#!">
+					<img src="img/logo-dark.svg" alt="">
+				</a>
+			</div>
+			<div class="dsi-sidebar-bottom d-flex flex-column">
+				<a href="#!" class="dsi-sidebar-a mb-md-4">
+					<div class="row dsi-row-4 align-items-center justify-content-center">
+						<div class="col-auto dsi-fz-0">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 10L3 8M3 8L10 1L17 8M3 8V18C3 18.5523 3.44772 19 4 19H7M17 8L19 10M17 8V18C17 18.5523 16.5523 19 16 19H13M7 19C7.55228 19 8 18.5523 8 18V14C8 13.4477 8.44772 13 9 13H11C11.5523 13 12 13.4477 12 14V18C12 18.5523 12.4477 19 13 19M7 19H13" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<div class="col">Dashboard</div>
+					</div>
+				</a>
+				<a href="#!" class="dsi-sidebar-a mb-md-4">
+					<div class="row dsi-row-4 align-items-center justify-content-center">
+						<div class="col-auto dsi-fz-0">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10 2.35418C10.7329 1.52375 11.8053 1 13 1C15.2091 1 17 2.79086 17 5C17 7.20914 15.2091 9 13 9C11.8053 9 10.7329 8.47624 10 7.64582M13 19H1V18C1 14.6863 3.68629 12 7 12C10.3137 12 13 14.6863 13 18V19ZM13 19H19V18C19 14.6863 16.3137 12 13 12C11.9071 12 10.8825 12.2922 10 12.8027M11 5C11 7.20914 9.20914 9 7 9C4.79086 9 3 7.20914 3 5C3 2.79086 4.79086 1 7 1C9.20914 1 11 2.79086 11 5Z" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<div class="col">Authors</div>
+					</div>
+				</a>
+				<a href="#!" class="dsi-sidebar-a mb-md-4 active">
+					<div class="row dsi-row-4 align-items-center justify-content-center">
+						<div class="col-auto dsi-fz-0">
+							<svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5 10H11M5 14H11M13 19H3C1.89543 19 1 18.1046 1 17V3C1 1.89543 1.89543 1 3 1H8.58579C8.851 1 9.10536 1.10536 9.29289 1.29289L14.7071 6.70711C14.8946 6.89464 15 7.149 15 7.41421V17C15 18.1046 14.1046 19 13 19Z" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<div class="col">Articles</div>
+					</div>
+				</a>
+				<div>
+					<a href="#tagmanagement" class="dsi-sidebar-a" data-toggle="collapse">
+						<div class="row dsi-row-4 align-items-center justify-content-center">
+							<div class="col-auto dsi-fz-0">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5 5H5.01M5 1H10C10.5119 0.999985 11.0237 1.19525 11.4142 1.58579L18.4143 8.58579C19.1953 9.36684 19.1953 10.6332 18.4143 11.4142L11.4142 18.4142C10.6332 19.1953 9.36683 19.1953 8.58579 18.4142L1.58579 11.4142C1.19526 11.0237 1 10.5118 1 10V5C1 2.79086 2.79086 1 5 1Z" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<div class="col">Tag Management</div>
+						</div>
+					</a>
+					<div class="collapse" id="tagmanagement">
+						<a href="#!" class="dsi-sidebar-a dsi-sidebar-a-2">Tags</a>
+						<a href="#!" class="dsi-sidebar-a dsi-sidebar-a-2">Categories</a>
+					</div>
+				</div>
+				<div class="mt-auto pt-3">
+					<a href="#!" class="dsi-sidebar-a mb-md-3">
+						<div class="row dsi-row-4 align-items-center justify-content-center">
+							<div class="col-auto dsi-fz-0">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.32463 2.31731C8.75103 0.560897 11.249 0.560897 11.6754 2.31731C11.9508 3.45193 13.2507 3.99038 14.2478 3.38285C15.7913 2.44239 17.5576 4.2087 16.6172 5.75218C16.0096 6.74925 16.5481 8.04918 17.6827 8.32463C19.4391 8.75103 19.4391 11.249 17.6827 11.6754C16.5481 11.9508 16.0096 13.2507 16.6172 14.2478C17.5576 15.7913 15.7913 17.5576 14.2478 16.6172C13.2507 16.0096 11.9508 16.5481 11.6754 17.6827C11.249 19.4391 8.75103 19.4391 8.32463 17.6827C8.04918 16.5481 6.74926 16.0096 5.75219 16.6172C4.2087 17.5576 2.44239 15.7913 3.38285 14.2478C3.99038 13.2507 3.45193 11.9508 2.31731 11.6754C0.560897 11.249 0.560897 8.75103 2.31731 8.32463C3.45193 8.04918 3.99037 6.74926 3.38285 5.75218C2.44239 4.2087 4.2087 2.44239 5.75219 3.38285C6.74926 3.99037 8.04918 3.45193 8.32463 2.31731Z" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M13 10C13 11.6569 11.6569 13 10 13C8.34315 13 7 11.6569 7 10C7 8.34315 8.34315 7 10 7C11.6569 7 13 8.34315 13 10Z" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<div class="col">Settings</div>
+						</div>
+					</a>
+					<a href="#!" class="dsi-sidebar-a">
+						<div class="row dsi-row-4 align-items-center justify-content-center">
+							<div class="col-auto dsi-fz-0">
+								<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M1 -6.55671e-07C1.55229 -6.55671e-07 2 0.447715 2 0.999999L2 13C2 13.5523 1.55228 14 0.999999 14C0.447714 14 -5.92389e-07 13.5523 -5.68248e-07 13L-4.37114e-08 0.999999C-1.95703e-08 0.447715 0.447716 -6.55671e-07 1 -6.55671e-07ZM8.70711 3.29289C9.09763 3.68342 9.09763 4.31658 8.70711 4.70711L7.41421 6L15 6C15.5523 6 16 6.44771 16 7C16 7.55228 15.5523 8 15 8L7.41421 8L8.70711 9.29289C9.09763 9.68342 9.09763 10.3166 8.70711 10.7071C8.31658 11.0976 7.68342 11.0976 7.29289 10.7071L4.29289 7.70711C4.10536 7.51957 4 7.26522 4 7C4 6.73478 4.10536 6.48043 4.29289 6.29289L7.29289 3.29289C7.68342 2.90237 8.31658 2.90237 8.70711 3.29289Z" fill="#BDBDBD"/>
+								</svg>
+							</div>
+							<div class="col">Log out</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</aside>
+
+		<header class="navbar dsi-navbar-dashboard navbar-light fixed-top justify-content-start">
+			<button class="dsi-sandwich mr-3 d-xl-none" id="sandwich-1"><span></span></button>
+			<form class="form-inline dsi-dashboard-form-search mr-auto">
+        <input class="form-control" type="text" placeholder="Search">
+        <button class="fas fa-search"></button>
+      </form>
+			<div class="ml-3">
+				<a href="#!" class="d-block">
+					<div class="align-middle d-none d-md-inline-block text-center">
+						<span class="dsi-black dsi-font-weight-bold">Max Forslund</span><br>
+						<span class="dsi-text-primary dsi-fz-14 font-weight-bold">View Profile</span>
+					</div>
+					<span class="d-inline-block align-middle ml-3">
+						<span class="dsi-dashboard-avatar" style="background-image: url(img/avatar-2.png)">
+						</span>
+					</span>
+				</a>
+			</div>
+		</header>
+
+		<section class="dsi-dashboard-content">
+			<div class="dsi-status-block">
+				<div class="row no-gutters">
+					<div class="col-4">
+						<div class="dsi-status-cart done">
+							<div class="row dsi-row-4 justify-content-center">
+								<div class="col-sm-auto text-center"><span class="dsi-steps">01</span></div>
+								<div class="col-sm mt-2 mt-sm-0 text-center text-sm-left">
+									<span class="align-middle d-inline-block">
+										<span class="dsi-text-steps">Article INFORMATION</span><br>
+										<span class="dsi-gray-2 d-none d-md-block">Create a new article</span>
+									</span>					
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="col-4">
+						<div class="dsi-status-cart done">
+							<div class="row dsi-row-4 justify-content-center">
+								<div class="col-sm-auto text-center"><span class="dsi-steps">02</span></div>
+								<div class="col-sm mt-2 mt-sm-0 text-center text-sm-left">
+									<span class="align-middle d-inline-block">
+										<span class="dsi-text-steps">ARTICLE CONTENT EDITOR</span><br>
+										<span class="dsi-gray-2 d-none d-md-block">Edit your article</span>
+									</span>					
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="col-4">
+						<div class="dsi-status-cart current">
+							<div class="row dsi-row-4 justify-content-center">
+								<div class="col-sm-auto text-center"><span class="dsi-steps">03</span></div>
+								<div class="col-sm mt-2 mt-sm-0 text-center text-sm-left">
+									<span class="align-middle d-inline-block">
+										<span class="dsi-text-steps">Preview</span><br>
+										<span class="dsi-gray-2 d-none d-md-block">Penatibus eu quis <ante class=""></ante></span>
+									</span>					
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+
+			<div class="row align-items-center mt-4">
+				<div class="col-md">
+					<div class="dsi-dashboard-titles dsi-text-primary">Preview</div>	
+					<div class="dsi-fz-14 dsi-text-primary dsi-font-weight-bold">New Article</div>	
+				</div>
+				<div class="col-md-auto">
+					<div class="row dsi-row-5">
+						<div class="col-auto">
+							<div class="dropdown dsi-dashboard-dropdown">
+			          <a href="#!" class="dropdown-toggle btn dsi-btn-send dsi-btn-dashboard-edit mt-2 mt-md-0" data-toggle="dropdown">
+			          	<img src="img/pencil.svg" alt="" class="align-middle">
+			          	<span class="ml-2 align-middle">Version 1.5.3</span>
+			          	<i class="fas fa-chevron-right"></i>
+			          </a>
+		            <div class="dropdown-menu">
+		              <a href="#!" class="dropdown-item">Version 1.5.3</a>
+		              <a href="#!" class="dropdown-item">Version 1.5.4</a>
+		              <a href="#!" class="dropdown-item">Version 1.5.5</a>
+		              <a href="#!" class="dropdown-item">Version 1.5.6</a>
+		            </div>
+		          </div>							
+						</div>
+						<div class="col-auto">
+							<div class="dropdown dsi-dashboard-dropdown">
+			          <a href="#!" class="dropdown-toggle btn dsi-btn-send dsi-btn-dashboard-add mt-2 mt-md-0" data-toggle="dropdown">
+			          	<span class="ml-2">Options</span>
+			          	<i class="fas fa-chevron-right"></i>
+			          </a>
+		            <div class="dropdown-menu">
+		              <a href="#!" class="dropdown-item">Edit</a>
+		              <a href="#!" class="dropdown-item">Save</a>
+		              <a href="#!" class="dropdown-item">Save as new version</a>
+		              <a href="#!" class="dropdown-item">Publish</a>
+		            </div>	
+		          </div>					
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row pt-3">
+				<div class="col">
+					<div class="dsi-block-dashed">
+						<img src="img/img-dashed-2.png" alt="">
+					</div>
+			</div>
+		</section>
+		
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.js"></script>
+	<script src="https://unpkg.com/drag-on-drop@3.3.2/dist/dragon-drop.js"></script>
+  <script src="js/common.js"></script>
+
+</body>
+</html>

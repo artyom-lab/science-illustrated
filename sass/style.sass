@@ -1,0 +1,1846 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+
+@font-face
+	font-family: 'FuturaPT-Book'
+	src: url('../fonts/FuturaPT-Book.ttf')
+	font-weight: 400
+@font-face
+	font-family: 'FuturaPT-Bold'
+	src: url('../fonts/FuturaPT-Bold.ttf')
+	font-weight: 700
+@font-face
+	font-family: 'FuturaPT-ExtraBold'
+	src: url('../fonts/FuturaPT-ExtraBold.ttf')
+	font-weight: 900
+@font-face
+	font-family: 'Georgia-Regular'
+	src: url('../fonts/Georgia-Regular.ttf')
+	font-weight: 400
+@font-face
+	font-family: 'Georgia-Bold'
+	src: url('../fonts/Georgia-Bold.ttf')
+	font-weight: 700
+
+$FuturaPT-Book: 'FuturaPT-Book', sans-serif
+$FuturaPT-Bold: 'FuturaPT-Bold', sans-serif
+$FuturaPT-ExtraBold: 'FuturaPT-ExtraBold', sans-serif
+$Inter: 'Inter', sans-serif
+$Georgia: 'Georgia-REgular', sans-serif
+$Roboto: 'Roboto', sans-serif
+
+$color-white: #FFF
+$color-card-bg: #FDFDFD
+$color-gray-light: #DCE4E7
+$color-gray: #949799
+$color-gray-2: #F0F0F0
+$color-gray-3: #333333
+$color-gray-4: #6B7280
+$color-black: #000
+$color-primary: #334A77
+$color-success: #7FEC34
+$color-info: #1469FF
+$color-warning: #FF9E14
+$color-error: #F50E0E
+$color-footer: #131B30
+$color-text-dark: #0A142F
+$color-border: #4B5563
+$color-pill: #F0F0F0
+$color-social: #9CA3AF
+$color-carousel: #FBFBFB
+$color-form: #FEFEFE
+$color-form-border: #D1D5DB
+$color-authors: rgba(10, 20, 47, 0.9)
+$color-btn: #171717
+$color-bg-body: #f9fafb
+$color-remove: #EB5757
+
+$box-small: 0px 4px 6px -2px rgba(8, 4, 27, 0.12)
+$box-medium: 0px 12px 12px -6px rgba(8, 4, 27, 0.12)
+$box-large: 0px 20px 24px -9px rgba(8, 4, 27, 0.12)
+$box-navbar: 2px 4px 4px rgba(0, 0, 0, 0.25)
+$box-authors: 0px 2px 6px rgba(0, 0, 0, 0.1)
+
+$transition: .3s
+
+.dsi-text-primary 
+	color: $color-primary !important
+.dsi-text-social
+	color: $color-social !important
+.dsi-text-authors
+	color: $color-authors !important
+.dsi-text-black
+	color: $color-btn !important
+.dsi-black 
+	color: $color-black !important
+.dsi-gray
+	color: $color-gray-3 !important
+.dsi-gray-2
+	color: $color-gray-4 !important
+
+.dsi-bg-gray
+	background: $color-bg-body
+
+.dsi-inter
+	font-family: $Inter
+.dsi-georgia
+	font-family: $Georgia
+
+.dsi-font-weight-bold
+	font-family: $FuturaPT-Bold
+
+* 
+	outline: none !important
+
+img 
+	max-width: 100%
+	height: auto
+
+body 
+	font-family: $FuturaPT-Book
+	background-color: $color-white
+	display: flex
+	color: $color-black
+	flex-direction: column
+	transition: $transition
+	min-height: 100vh
+
+a 
+	text-decoration: none !important
+	transition: $transition
+	&:hover 
+		opacity: .7
+	&.dsi-text-primary
+		&:hover 
+			color: $color-primary
+			opacity: .7
+	&.dsi-text-black
+		&:hover 
+			color: $color-btn
+			opacity: .7
+
+input
+	&[type=radio], &[type=checkbox]
+		display: none
+
+hr 
+	border-top: 1px solid $color-white
+	opacity: .25
+
+@media (min-width: 1260px)
+	.container 
+		max-width: 1200px
+
+.dsi-container-0
+	max-width: 100%
+	padding-left: 0
+	padding-right: 0
+
+.dsi-row-1
+	margin-left: -4px
+	margin-right: -4px
+	> [class*='col']
+		padding-left: 4px
+		padding-right: 4px
+
+.dsi-row-2
+	margin-left: -20px
+	margin-right: -20px
+	> [class*='col']
+		padding-left: 20px
+		padding-right: 20px
+
+.dsi-row-3
+	margin-left: -11px
+	margin-right: -11px
+	> [class*='col']
+		padding-left: 11px
+		padding-right: 11px
+
+.dsi-row-4
+	margin-left: -8px
+	margin-right: -8px
+	> [class*='col']
+		padding-left: 8px
+		padding-right: 8px
+
+.dsi-row-5
+	margin-left: -6px
+	margin-right: -6px
+	> [class*='col']
+		padding-left: 6px
+		padding-right: 6px
+
+.dsi-row-6
+	margin-left: -30px
+	margin-right: -30px
+	> [class*='col']
+		padding-left: 30px
+		padding-right: 30px
+
+.dsi-row-7
+	@media (min-width: 768px)
+		margin-left: -24px
+		margin-right: -24px
+		> [class*='col']
+			padding-left: 24px
+			padding-right: 24px
+
+.dsi-row-carousel
+	@media (max-width: 1199.98px)
+		margin-left: -7px
+		margin-right: -7px
+		> [class*='col']
+			padding-left: 7px
+			padding-right: 7px
+
+.btn
+	&:focus 
+		box-shadow: none
+
+.dsi-btn-related
+	padding: 12px
+	text-align: center
+	color: $color-primary
+	font-size: 16px
+	font-weight: bold
+	border: 0.2px solid rgba(51, 74, 119, 0.1)
+	background: $color-card-bg
+	border-radius: 8px
+	transition: $transition
+	font-family: $FuturaPT-Bold
+
+.dsi-btn-social
+	font-size: 14px
+	color: $color-primary
+	padding: 20px 10px
+	border: 1px solid #EAEAEA
+	border-radius: 4px
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08)
+	background: $color-white
+	transition: $transition
+	font-weight: bold
+	@media (max-width: 991.98px)
+		padding: 8px
+	.fab
+		font-size: 20px
+	&:hover 
+		color: $color-white
+		background: $color-primary
+		opacity: 1
+
+.dsi-btn-send
+	font-size: 18px
+	font-weight: 500
+	background: $color-primary
+	padding: 8px 22px
+	border: 0
+	color: $color-white
+	transition: $transition
+	border-radius: 4px
+	&:hover 
+		color: $color-white
+		opacity: .9
+
+.dsi-btn-go-back
+	@media (max-width: 767.98px)
+		font-size: 16px
+
+.dsi-btn-dashboard-add
+	font-size: 14px
+	font-family: $Inter
+
+.dsi-btn-dashboard-edit
+	font-size: 14px
+	font-family: $Inter
+	background: #4B5563
+
+.dsi-btn-dashboard-cancel
+	font-size: 14px
+	font-family: $Inter
+	background: $color-white
+	color: $color-gray-3
+	&:hover 
+		color: $color-gray-3
+		opacity: .8
+
+.dsi-btn-dashboard-red
+	font-size: 14px
+	font-family: $Inter
+	background: $color-remove
+
+.link-remove 
+	color: #E23B07
+	background: transparent
+	&:hover
+		color: #E23B07
+		opacity: .8
+
+.dsi-fz-0
+	font-size: 0
+.dsi-fz-12
+	font-size: 12px		
+.dsi-fz-13
+	font-size: 13px		
+.dsi-fz-14
+	font-size: 14px 	
+.dsi-fz-16
+	font-size: 16px 
+.dsi-fz-18
+	font-size: 18px		
+	@media (max-width: 767.98px)
+		font-size: 14px
+.dsi-fz-18-links
+	font-size: 18px		
+	@media (max-width: 1199.98px)
+		font-size: 12px
+.dsi-fz-24
+	font-size: 24px		
+	@media (max-width: 767.98px)
+		font-size: 16px
+
+.dsi-lh-1
+	line-height: 1
+.dsi-lh-15
+	line-height: 1.5
+.dsi-lh-17
+	line-height: 1.7
+
+.dsi-br-1
+	@media (min-width: 768px)
+		border-right: 1px solid #E5E7EB
+
+.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6
+	font-family: $FuturaPT-Bold
+	font-weight: bold
+
+.h1, h1
+	font-size: 40px
+	color: $color-primary
+	@media (max-width: 767.98px)
+		font-size: 24px
+
+.h2, h2
+	font-size: 32px
+	color: $color-primary
+	@media (max-width: 767.98px)
+		font-size: 24px
+
+.h2 
+	font-size: 24px
+	@media (max-width: 1199.98px)
+		font-size: 14px
+
+.h3, h3
+	font-size: 24px
+	color: $color-primary
+	@media (max-width: 767.98px)
+		font-size: 16px
+
+.h3
+	@media (max-width: 1199.98px)
+		font-size: 20px
+
+.h4, h4
+	font-size: 21px
+
+h4 
+	color: $color-primary
+
+.h5, h5
+	font-size: 18px
+	font-weight: 600
+	color: #333333
+
+.h5 
+	color: $color-primary
+	font-weight: bold
+	line-height: 1.5
+	@media (max-width: 1199.98px)
+		font-size: 14px
+
+.navbar 
+	transition: $transition 
+	background: $color-card-bg
+	box-shadow: $box-navbar
+	padding-top: 19px
+	padding-bottom: 19px
+	.navbar-toggler 
+		border: 0 !important
+		padding: 0 !important
+	.navbar-nav
+		.nav-item 
+			margin: 13px 18px
+			@media (max-width: 1199.98px)
+				margin: 13px
+			.nav-link
+				display: inline-block
+				color: $color-primary
+				font-weight: 600
+				letter-spacing: 1px
+				&.active
+					font-family: $FuturaPT-Bold
+					color: #1C3361
+				&:hover 
+					color: #1C3361
+					opacity: 1
+	.navbar-brand 
+		width: 314px
+		@media (max-width: 991.98px)	
+			width: auto
+		img
+			width: 130px
+			transition: width $transition
+			@media (max-width: 1199.98px)
+				max-width: 97px
+	@media (min-width: 1200px)
+		padding: 11px
+		&.dsi-sticky	
+			padding-top: 4px
+			padding-bottom: 4px
+			.navbar-brand
+				img
+					transition: $transition
+					width: 100px
+	.navbar-collapse
+		&.dsi-collapse 
+			@media (min-width: 1200px)
+				display: none !important
+
+.dsi-stretched 
+	@media (max-width: 1199.98px)
+		overflow: hidden
+		nav 
+			&.fixed-top
+				bottom: 0 
+				align-items: start
+				overflow: auto
+
+.navbar-toggler, .dsi-sandwich
+	display: block
+	cursor: pointer
+	transition: none
+	background: transparent
+	transition: $transition
+	padding: 0
+	border: 0
+	&:hover 
+		opacity: .6
+	&:before
+		width: 28px
+	span
+		width: 28px
+	&:after
+		width: 28px
+	&:before, &:after
+		content: ''
+	span, &:after
+		margin-top: 8px
+	span, &:before, &:after
+		display: block
+		transition: $transition
+		transform-origin: right center
+		border-top: 2px solid $color-primary
+		margin-left: auto
+	&.active
+		&:before
+			transform: rotate(-45deg)
+			width: 28px
+		span
+			width: 0
+			opacity: 0
+		&:after
+			transform: rotate(45deg)
+			width: 28px
+
+.form-control
+	border-radius: 6px
+	height: 45px
+	padding: 12px 40px 12px 12px
+	background: $color-card-bg
+	border: 0.2px solid rgba(51, 74, 119, .1)
+	font-size: 15px
+	color: rgba(10, 20, 47, 0.9)
+	font-weight: bold
+	&::-webkit-input-placeholder
+		color: rgba(10, 20, 47, 0.9)
+		font-weight: normal
+	&::-moz-placeholder
+		color: rgba(10, 20, 47, 0.9)
+		font-weight: normal
+	&:-ms-input-placeholder
+		color: rgba(10, 20, 47, 0.9)
+		font-weight: normal
+	&:focus
+		box-shadow: none
+		border: 0.2px solid rgba(51, 74, 119, .1)
+		background: $color-card-bg
+	&.dropdown-toggle
+		@media (max-width: 1199.98px)
+			border-radius: 16px
+			background: #F2F2F2
+ 
+.dsi-form-control-2
+	font-size: 16px
+	&::-webkit-input-placeholder
+		color: rgba(10, 20, 47, 0.9)
+		font-weight: bold
+	&::-moz-placeholder
+		color: rgba(10, 20, 47, 0.9)
+		font-weight: bold
+	&:-ms-input-placeholder
+		color: rgba(10, 20, 47, 0.9)
+		font-weight: bold
+
+.dsi-form-search
+	position: relative
+	width: 380px
+	@media (max-width: 1199.98px)
+		width: 100%
+		margin-top: 38px
+		margin-bottom: 16px
+	.form-control 
+		min-width: auto
+		width: 100% !important
+		@media (min-width: 1200px)
+			min-width: 380px
+	.dsi-search
+		display: inline-block
+		width: 18px
+		height: 18px
+		transition: $transition
+		position: absolute
+		background-size: cover
+		background-image: url(../img/search.svg)
+		background-position: center center
+		top: 50%
+		transform: translateY(-50%)
+		right: 14px
+		padding: 0
+		&:hover
+			opacity: .6
+
+.dsi-form-search-dropdown
+	.dropdown-menu 
+		margin-top: -1px
+	&.show
+		.form-control
+			border-radius: 6px 6px 0 0
+
+.dsi-search-dropdown
+	padding: 0
+	border-radius: 0 0 6px 6px
+	box-shadow: $box-navbar
+	border: 0.2px solid rgba(51, 74, 119, .1)
+	border-top: 0
+	background: $color-card-bg
+	.dsi-loc-border
+		border-top: 0.2px solid rgba(51, 74, 119, .1)
+		@media (max-width: 1199.98px)
+			overflow: auto
+			max-height: 280px
+
+.dsi-article
+	color: $color-primary
+	padding-top: 10px
+	padding-bottom: 8px
+	.dsi-avatar 
+		display: inline-block
+		width: 48px
+		height: 38px
+		border-radius: 8px
+		background-color: $color-gray
+		background-size: cover
+		background-position: center center
+	.dsi-avatar-2
+		height: 48px
+		border-radius: 100px
+	.stretched-link 
+		color: $color-primary
+
+.dsi-social-links
+	border-top: 1px solid $color-border
+	padding-top: 36px
+	.fab 
+		color: $color-primary
+
+.dsi-social-links-2
+	border-top: 1px solid $color-border
+	padding-top: 36px
+	.fab 
+		color: $color-social
+		&:hover 
+			color: $color-white
+			opacity: 1
+
+.dsi-long-text 
+	white-space: nowrap
+	text-overflow: ellipsis
+	overflow: hidden
+
+.dsi-pill
+	font-size: 14px
+	color: $color-primary
+	padding: 6px 16px
+	display: inline-block
+	background: $color-pill
+	&:hover 
+		color: $color-primary
+		opacity: .7
+
+.dsi-pill-2
+	color: #666666
+	background: #F8F9FA
+	&:hover, &.active
+		color: $color-white
+		background: $color-primary
+		opacity: 1
+
+.dsi-footer 
+	padding-top: 32px
+	background: $color-footer
+	margin-top: auto
+	color: $color-white
+	letter-spacing: 1px
+
+.dsi-footer-mobile
+	color: $color-white
+	margin-top: auto
+	background: $color-footer
+	padding: 48px 16px
+
+.dsi-footer, .dsi-footer-mobile
+	.dsi-links
+		a 
+			color: $color-white
+			display: inline-block
+			font-size: 14px
+			opacity: .7
+			&:hover 
+				opacity: 1
+
+.dsi-border-8
+	border-radius: 8px
+
+.dsi-bg-img 
+	background-size: cover
+	background-position: center center
+	height: 448px
+	@media (max-width: 1199.98px)
+		height: 360px
+	@media (max-width: 991.98px)
+		height: 324px
+	@media (max-width: 767.98px)
+		height: 260px
+
+.dsi-bg-img-2
+	background-size: cover
+	background-position: center center
+	height: 100%
+	transition: $transition
+	min-height: 280px
+	@media (max-width: 991.98px)
+		min-height: 210px
+	@media (max-width: 767.98px)
+		min-height: 130px
+	@media (max-width: 575.98px)
+		min-height: 115px
+
+.dsi-bg-img-cart
+	background-size: cover
+	background-position: center center
+	transition: $transition
+	height: 280px
+	@media (max-width: 1199.98px)
+		height: 160px
+
+.dsi-img-wrap 
+	overflow: hidden
+	transition: $transition
+	.dsi-bg-wrap
+		transition: $transition
+	@media (min-width: 1200px)
+		&:hover
+			.dsi-bg-wrap
+				transform: scale(1.1) 
+
+.dsi-img-wrap-circle
+	border-radius: 100px
+	font-size: 0
+	.dsi-avatar-big
+		width: 180px
+		height: 180px
+		border-radius: 100px
+		background-color: $color-gray
+		background-size: cover
+		background-position: center center
+		@media (max-width: 991.98px)
+			width: 101px
+			height: 101px
+	.dsi-avatar-big-2
+		width: 130px
+		height: 130px
+		@media (max-width: 991.98px)
+			width: 101px
+			height: 101px
+	.dsi-avatar-100
+		height: 100px
+		width: 100px
+
+.dsi-avatar-download 
+	position: relative
+	width: 100px
+	height: 100px
+	border-radius: 100px
+	background-color: $color-gray
+	background-size: cover
+	background-position: center center
+	.dsi-download-link
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 10px
+
+.dsi-section-1
+	margin-top: 128px
+	@media (max-width: 1199.98px)
+		margin-top: 116px
+
+.dsi-section-2
+	margin-top: 88px
+	padding-top: 112px
+	padding-bottom: 83px
+	@media (max-width: 1199.98px)
+		padding-top: 83px
+
+.dsi-slide
+	border-radius: 8px
+	background: $color-carousel
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1)
+	overflow: hidden
+
+.dsi-slide-2
+	.h5
+		@media (max-width: 1199.98px)
+			font-size: 18px
+		@media (max-width: 767.98px)
+			font-size: 16px
+		@media (max-width: 576.98px)
+			font-size: 14px
+	.dsi-bg-img-2
+		min-height: 264px
+		@media (max-width: 767.98px)
+			min-height: 202px
+		@media (max-width: 575.98px)
+			min-height: 121px
+
+.dsi-carousel-right-block
+	height: 100%
+	padding: 16px 100px 16px 0
+	@media (max-width: 1199.98px)
+		padding: 12px 70px 12px 0
+	@media (max-width: 991.98px)
+		padding: 12px 12px 12px 0
+	@media (max-width: 575.98px)
+		padding: 8px 8px 18px 
+	h3 
+		line-height: 1.5
+	.dsi-content
+		max-height: 120px
+		text-overflow: ellipsis
+		overflow: hidden
+		@media (max-width: 991.98px)
+			max-height: 72px
+		@media (max-width: 767.98px)
+			max-height: 52px
+
+.dsi-content-right-block
+	height: 100%
+	padding: 40px 40px 24px 24px
+	.dsi-content
+		max-height: 100px
+		text-overflow: ellipsis
+		overflow: hidden
+		@media (max-width: 1199.98px)
+			max-height: 70px
+	@media (max-width: 991.98px)
+		padding: 16px 16px 16px 0
+	@media (max-width: 576.98px)
+		padding: 8px 8px 8px 0
+	h3 
+		@media (max-width: 1199.98px)
+			font-size: 18px
+		@media (max-width: 991.98px)
+			font-size: 16px
+		@media (max-width: 576.98px)
+			font-size: 14px
+
+.dsi-posted
+	@media (max-width: 767.98px)
+		font-size: 14px
+	@media (max-width: 576.98px)
+		font-size: 12px
+
+.dsi-posted-2
+	@media (max-width: 1199.98px)
+		font-size: 14px
+	@media (max-width: 576.98px)
+		font-size: 10px
+
+.dsi-posted-carousel
+	@media (max-width: 767.98px)
+		font-size: 14px
+
+.dsi-owl-1
+	.owl-stage-outer
+		cursor: ew-resize
+	&.owl-theme
+		.owl-nav 
+			margin-top: 0
+		.owl-dots
+			font-size: 0
+			margin-top: 10px
+			z-index: 10
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			transition: $transition
+			min-width: 150px
+			.owl-dot 
+				vertical-align: middle
+				span
+					margin: 11px
+					width: 8px
+					height: 8px
+					background: #C4C4C4
+					transition: $transition
+				&:hover, &.active
+					span
+						background: $color-primary
+
+	.owl-nav
+		[class*=owl-]
+			border-radius: 100px
+			height: 63px
+			width: 63px
+			box-shadow: $box-navbar
+			background-color: #F5F5F5 !important
+			background-position: center center !important
+			background-repeat: no-repeat !important
+			transition: $transition
+			opacity: 0
+			&.owl-prev, &.owl-next
+				position: absolute	
+				vertical-align: middle	
+				top: 50%
+				transform: translateY(-50%)
+				font-size: 0
+			&.owl-prev
+				background-image: url(../img/owl-prev.svg)
+				left: -28px
+			&.owl-next
+				background-image: url(../img/owl-next.svg)
+				right: -28px
+			&:hover:not(.disabled)
+				opacity: 1
+	&:hover 
+		.owl-nav
+			[class*=owl-]
+				opacity: .7
+
+.dsi-tabs
+	padding: 32px 
+	border-radius: 8px
+	background: $color-card-bg
+	flex-wrap: nowrap
+	white-space: nowrap
+	@media (max-width: 1199.98px)
+		background: $color-white
+		padding: 12px 6px
+	.nav-link 
+		position: relative
+		color: $color-primary
+		font-size: 18px
+		padding: 8px 24px
+		@media (max-width: 1199.98px)
+			font-size: 14px
+		&:after 
+			content: ""
+			position: absolute
+			bottom: 8px
+			left: 22px
+			width: 0
+			border: 0
+			border-bottom: 2px solid $color-primary
+			transition: $transition
+			margin-left: 0
+		&:hover, &.active
+			color: $color-primary
+			background: transparent
+			opacity: 1
+			&.active
+				font-family: $FuturaPT-Bold
+			&:after
+				width: calc(100% - 44px)
+
+.dsi-tabs-2
+	@media (min-width: 1200px)
+		padding: 22px 16px
+
+.dsi-sort-by
+	position: relative
+	color: $color-primary
+	font-size: 18px
+	padding: 8px 40px 8px 24px
+	@media (max-width: 1199.98px)
+		font-size: 14px
+	@media (max-width: 991.98px)
+		padding-right: 16px
+		margin-right: 16px
+	&:hover
+		color: $color-primary
+
+.fa-chevron-right
+	position: absolute
+	top: 20px
+	transform: translateY(-50%) rotate(90deg)
+	right: 24px
+	transition: $transition
+	font-size: 14px
+	@media (max-width: 1199.98px)
+		top: 18px
+		font-size: 10px
+	@media (max-width: 991.98px)
+		right: 0
+
+.dsi-w-114
+	width: 114px
+	@media (max-width: 1199.98px)
+		width: 103px
+
+.dsi-cart
+	height: 100%
+	display: flex
+	flex-direction: column
+	.dsi-block
+		padding: 24px 24px 10px
+		flex-grow: 1
+		@media (max-width: 1199.98px)
+			padding: 8px
+
+.dsi-carts
+	flex-wrap: nowrap
+	overflow: auto
+	padding-right: 12px
+
+.dsi-notify-block
+	padding: 24px
+	background: $color-form
+	box-shadow: $box-navbar
+	margin-top: 32px
+	@media (max-width: 1199.98px)
+		padding-bottom: 44px
+	@media (max-width: 767.98px)
+		margin-top: 24px
+	.h4 
+		@media (max-width: 1199.98px)
+			font-weight: normal
+			color: $color-primary
+	.form-control 
+		height: 50px
+		background: $color-white
+		border: 1px solid $color-form-border
+		border-radius: 6px
+		font-size: 16px
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05)
+		color: #6B7280
+		padding: 12px
+		margin-right: 24px
+		font-family: $Inter
+		@media (max-width: 1199.98px)
+			width: 100%
+		&::-webkit-input-placeholder
+			color: #6B7280
+		&::-moz-placeholder
+			color: #6B7280
+		&:-ms-input-placeholder
+			color: #6B7280
+		&:focus 
+			box-shadow: none
+	.dsi-btn-notify
+		font-size: 16px
+		font-weight: 500
+		background: $color-primary
+		padding: 13px 36px
+		border: 0
+		color: $color-white
+		transition: $transition
+		font-family: $Inter
+		border-radius: 6px
+		&:hover 
+			opacity: .9
+
+.dsi-privacy
+	color: #828282
+	font-size: 14px
+	font-family: $Inter
+	a 
+		color: #828282
+		text-decoration: underline !important
+
+.dsi-authors-block
+	color: $color-primary
+	background: $color-card-bg
+	box-shadow: $box-authors
+	border-radius: 100px 8px 8px 100px
+	.dsi-avatar 
+		display: inline-block
+		width: 110px
+		height: 110px
+		border-radius: 100px
+		background-color: $color-gray
+		background-size: cover
+		background-position: center center
+	.stretched-link 
+		color: $color-primary
+
+.dsi-latest-block
+	overflow: visible
+	.h2 
+		@media (max-width: 1199.98px)
+			font-size: 20px
+		@media (max-width: 767.98px)
+			font-size: 14px
+	.dsi-latest
+		@media (max-width: 1199.98px)
+			font-size: 14px
+
+.dsi-form-message
+	.form-control
+		height: 56px
+	.dsi-form-textarea
+		height: 199px
+		resize: none
+	.form-control, .dsi-form-textarea
+		background: $color-white
+		box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08)
+		border-radius: 4px
+		font-size: 16px
+		color: rgba(17, 17, 17, 0.48)
+		border: 0
+		font-family: $Roboto
+		padding: 16px
+		@media (max-width: 1199.98px)
+			border: 1px solid #D1D5DB
+			box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05)
+		&::-webkit-input-placeholder
+			color: rgba(17, 17, 17, 0.48)
+			font-family: $Roboto
+		&::-moz-placeholder
+			color: rgba(17, 17, 17, 0.48)
+			font-family: $Roboto
+		&:-ms-input-placeholder
+			color: rgba(17, 17, 17, 0.48)
+			font-family: $Roboto
+		&:focus
+			box-shadow: 0px 4px 4px rgba(51, 74, 119, 0.48), 0px 4px 16px rgba(51, 74, 119, 0.08)
+	
+.dsi-card-signin
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06)
+	border-radius: 8px
+	padding: 32px 40px
+	border: 0
+	@media (max-width: 767.98px)
+		padding: 32px 15px
+
+.dsi-input-comment
+	color: $color-primary
+	font-weight: 600
+	font-family: $Inter
+	font-size: 14px
+	display: inline-block
+
+.dsi-form-control-dashboard
+	height: 42px
+	border: 1px solid #D1D5DB
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05)
+	padding: 12px
+	background: $color-white
+	font-weight: normal
+
+label
+	&.dsi-check-group
+		font-size: 14px
+		display: block
+		margin-bottom: 0
+		position: relative
+		cursor: pointer
+		transition: $transition
+		padding-left: 24px
+		div:before
+			content: ''
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			border: 1px solid 
+			background-color: $color-white
+			background-position: center center
+			background-repeat: no-repeat
+			background-size: 10px
+			transition: $transition
+			border-radius: 4px
+			width: 16px
+			height: 16px
+			border-color: #D1D5DB
+		input
+			&:checked ~ div:before
+				border-color: $color-primary
+				background-image: url(../img/i-verified.svg)
+				background-color: $color-primary
+
+.dsi-link-forgot
+	font-family: $Inter
+	font-size: 14px
+	font-weight: 600
+	color: $color-primary
+	&:hover 
+		color: $color-primary
+
+// DASHBOARD
+
+.dsi-body-dashboard
+	padding-top: 64px
+	position: relative
+	@media (min-width: 1200px)
+		padding-left: 256px
+	&.dsi-menubar-1
+		@media (min-width: 1200px)
+			padding-left: 0
+		@media (max-width: 1199.98px)
+			overflow: hidden
+			.dsi-sidebar-1, .dsi-navbar-dashboard, .dsi-dashboard-content
+				transform: translateX(256px)
+		.dsi-dashboard-content, .form-control
+			pointer-events: none
+
+.dsi-sidebar-1, .dsi-navbar-dashboard, .dsi-dashboard-content, .dsi-sidebar-top
+	transition: $transition
+
+.dsi-sidebar-1
+	position: fixed
+	width: 256px
+	top: 0
+	bottom: 0
+	left: 0
+	max-height: 100vh
+	color: #BDBDBD
+	background-color: $color-footer
+	display: flex
+	flex-direction: column
+	z-index: 1040
+	@media (max-width: 1199.98px)
+		left: auto
+		right: 100%
+	.dsi-sidebar-top
+		padding: 20px 2px 4px
+		width: 256px
+		background: $color-footer
+	.dsi-sidebar-bottom
+		flex-grow: 1
+		overflow: auto
+		padding: 8px
+		padding-bottom: 16px
+		&::-webkit-scrollbar
+			display: none
+		.dsi-sidebar-a
+			padding: 11px 15px
+			display: block
+			color: #BDBDBD
+			border-radius: 6px
+			font-family: $Inter
+			font-weight: 500
+			font-size: 14px
+			svg path 
+				transition: $transition
+			&:hover, &.active, &[aria-expanded="true"]
+				opacity: 1
+				color: $color-white
+				font-weight: bold
+				background: #182541
+				svg path 
+					stroke: $color-white
+			&[aria-expanded="true"]
+				border-radius: 6px 6px 0 0
+			~ .collapse 
+				border-radius: 0 0 6px 6px
+				overflow: hidden
+				background: #182541
+		.dsi-sidebar-a-2
+			padding: 5px 15px 10px 50px
+			border-radius: 0
+			background: #182541
+
+.dsi-navbar-dashboard
+	padding: 4px 16px 
+	height: 64px
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06)
+	left: 256px
+	@media (max-width: 1199.98px)
+		left: 0
+
+.dsi-dashboard-content
+	flex-grow: 1
+	max-width: 100%
+	background: #F3F4F6
+	padding: 24px 32px 32px 
+	@media (max-width: 767.98px)
+		padding: 24px 16px 32px 
+
+.dsi-dashboard-avatar
+	width: 32px
+	height: 32px
+	border-radius: 100px
+	background-size: cover
+	background-color: #DEDEDE
+	background-position: center center
+	display: block
+
+.dsi-dashboard-avatar-2
+	width: 40px
+	height: 40px
+	display: inline-block
+
+.dsi-dashboard-avatar-3
+	width: 24px
+	height: 24px
+	display: inline-block
+
+.dsi-dashboard-form-search
+	position: relative
+	.form-control
+		padding: 0 15px
+		height: 20px
+		padding-left: 30px
+		background: transparent
+		width: 280px
+		@media (max-width: 767.98px)
+			width: 180px
+		border: 0
+		border-radius: 0
+		font-size: 14px
+		font-family: $Inter
+		color: #6B7280
+	.fas
+		transition: $transition
+		position: absolute
+		background: none
+		border: none
+		top: 50%
+		transform: translateY(-50%)
+		left: 2px
+		padding: 0
+		font-size: 14px
+		color: #6B7280
+
+.dsi-dashboard-titles
+	font-size: 24px
+	color: $color-gray-3
+	font-family: $Inter
+	font-weight: 900
+
+.dsi-dashboard-titles-2
+	font-size: 18px
+	color: $color-primary
+	font-family: $Inter
+	font-weight: 700
+
+.dsi-table-cart
+	background: $color-white
+	border: 1px solid #E5E7EB
+	overflow: hidden
+	font-family: $Inter
+	border-radius: 8px
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06)
+
+.table-2
+	white-space: nowrap
+	thead
+		background: #F9FAFB
+		th
+			color: #6B7280
+			font-weight: 500
+			font-size: 12px
+			padding: 12px 24px
+			text-transform: uppercase
+			border-bottom: 1px solid #E5E7EB
+			@media (max-width: 1199.98px)
+				padding: 14px
+	tbody
+		tr:not(:last-child)
+			border-bottom: 1px solid #E5E7EB
+		th, td
+			font-size: 14px
+			color: #111827
+			padding: 16px 24px
+			vertical-align: middle
+			&:last-child 
+				text-align: right
+			@media (max-width: 1199.98px)
+				padding: 14px
+			&.dsi-wrap
+				white-space: initial
+	tr 
+		padding-left: 24px
+		padding-right: 24px
+		@media (max-width: 575.98px)
+			padding-left: 14px
+			padding-right: 14px
+
+.dsi-card-dashboard
+	padding: 32px 24px 24px
+	@media (max-width: 767.98px)
+		padding: 32px 15px
+
+.select2-container
+	font-size: 14px
+	color: #4F4F4F
+	width: auto !important
+	display: block
+	font-weight: 500
+	font-family: $Inter
+	.select2-selection--single
+		height: 42px
+		.select2-selection__rendered
+			padding-left: 12px
+			padding-right: 45px
+	.select2-selection--multiple
+		min-height: 42px
+		border-color: #DCDCDC
+		border-radius: 22.5px !important
+		transition: .15s ease-in-out
+	.select2-search--inline 
+		.select2-search__field
+			margin-top: 8px
+			margin-left: 9px
+			height: 27px
+			padding: 3px 0
+			color: inherit
+.select2-container--default 
+	.select2-search--dropdown 
+		padding: 0 0 4px
+		.select2-search__field
+			border-color: #D1D5DB
+			border-radius: 3px
+			padding: 7px
+			color: #4F4F4F
+			font-size: 11px
+	.select2-selection--single
+		display: flex
+		align-items: center
+		border-color: #D1D5DB
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05)
+		border-radius: 6px !important
+		transition: .15s ease-in-out
+		.select2-selection__rendered
+			color: #4F4F4F
+			line-height: 42px
+		.select2-selection__arrow
+			height: 6.18px
+			width: 10px
+			right: 20px
+			top: 50%
+			transform: translateY(-50%)
+			background-image: url(../img/arrow.svg)
+			background-size: cover
+			b 
+				display: none
+	.select2-results__option--selected
+		background-color: #F6F7F9
+	.select2-results__option--highlighted.select2-results__option--selectable
+		background-color: $color-primary
+	.select2-results > .select2-results__options
+		max-height: 180px
+		border-radius: 3px
+	.select2-selection--multiple 
+		.select2-selection__choice
+			color: $color-primary
+			background-color: #E4F5F8
+			border: 0
+			border-radius: 100px
+			align-items: center
+			margin-left: 9px
+			margin-top: 8px
+			padding: 4.5px 24px 4.5px 10px
+			font-size: 12px
+		.select2-selection__choice__display
+			padding: 0
+		.select2-selection__choice__remove
+			background-color: transparent !important
+			border-right: 0
+			border-radius: 0
+			color: inherit !important
+			font-size: 20px
+			font-weight: 400
+			padding: 0
+			left: auto 
+			top: 50%
+			right: 10px
+			transform: translateY(-50%)
+			opacity: .6
+			transition: .3s
+			&:hover 
+				opacity: 1
+.select2-container--open 
+	.select2-dropdown
+		border: 1px solid #DCDCDC
+		border-radius: 7px
+		overflow: hidden
+		padding: 4px
+		z-index: 1029
+.select2-results__option
+	transition: .3s
+body > .select2-container
+	.select2-dropdown--below
+		margin-top: 2px
+	.select2-dropdown--above
+		margin-top: -2px
+
+.dsi-custom-select-active
+	~ .select2-container
+			.select2-selection__rendered
+				color: #27AE60
+
+.dsi-pill-active
+	color: #065F46
+	font-weight: 500
+	font-family: $Inter
+	font-size: 12px
+	line-height: 12px
+	display: inline-block
+	padding: 6px 10px
+	border-radius: 100px
+	background: #D1FAE5
+
+.dsi-pill-draft
+	color: #064A5F
+	font-weight: 500
+	padding: 6px 10px
+	background: #D1E9FA
+
+.dsi-upload-container
+	border-radius: 6px
+	border: 1px solid $color-form-border
+	padding: 4px
+
+.dsi-uploader
+	display: block
+	position: relative
+	overflow: hidden
+	margin: 0
+	cursor: pointer
+	&.uploaded
+		input
+			pointer-events: none
+	&.uploader-box
+		text-align: center
+		.form-control	
+			width: 100%
+			height: 135px
+			padding: 0
+			img 
+				width: 36px
+			.uploader-text-wrap
+				position: absolute
+				top: 50%
+				left: 0
+				right: 0
+				padding: 0 15px
+				transform: translateY(-50%)
+				transition: $transition
+				.uploader-text
+					display: block
+	.image 
+		width: 100% !important
+		height: 100%
+		object-fit: cover
+		position: relative
+		transition: $transition
+	input
+		position: absolute
+		visibility: hidden
+	.form-control
+		position: relative
+		overflow: hidden
+		background: $color-white
+		border: 2px dashed $color-form-border
+		.uploader-text
+			color: $color-border
+			text-overflow: ellipsis
+			font-family: $Inter
+			font-weight: 600
+			padding-top: 8px
+			font-size: 13px
+		.uploader-description
+			font-size: 14px
+			line-height: 17px
+			max-width: 238px
+			display: block
+			margin: 0 auto
+
+.dsi-move
+	@media (min-width: 1200px)
+		.handle 
+			border: 0
+			width: 14px
+			height: 8px
+			position: absolute
+			display: inline-block
+			background: transparent
+			background-image: url(../img/lines.svg)
+			background-size: 14px 8px
+			background-repeat: no-repeat
+			background-position: center center
+			vertical-align: middle
+			padding: 0
+			top: 50%
+			transform: translateY(-50%)
+			cursor: ns-resize !important
+			&:before 
+				color: #cad6e2
+
+.dsi-add-link
+	.dsi-cross-circle
+		display: inline-block
+		width: 32px
+		height: 32px
+		background-color: $color-white
+		background-image: url(../img/cross-blue.svg)
+		background-size: 14px 8px
+		background-repeat: no-repeat
+		background-position: center center
+		border-radius: 100px
+		border: 2px dashed #E5E7EB
+		vertical-align: middle
+
+.dsi-dashboard-textarea
+	height: 134px !important
+	resize: none
+	background: $color-white
+	font-weight: normal
+
+.breadcrumb
+	background: transparent
+	font-size: 14px
+	font-weight: 500
+	font-family: $Inter
+	color: #9CA3AF
+	.breadcrumb-item
+		+ .breadcrumb-item
+			padding-left: 0
+			&:before
+				content: ""
+				display: inline-block
+				width: 6px
+				height: 10px
+				padding-right: 52px
+				background-image: url(../img/breadcrumb.svg)
+				background-size: 6px 10px
+				background-repeat: no-repeat
+				background-position: center center
+		a
+			color: #9CA3AF
+			&:hover
+				opacity: .7
+		&.active 
+			color: #9CA3AF
+
+.dsi-status-block
+	border: 2px solid $color-form-border
+	.dsi-status-cart
+		padding: 19px 0 19px 22px
+		font-size: 14px
+		font-family: $Inter
+		display: flex
+		flex-direction: column
+		height: 100%
+		@media (max-width: 575.98px)
+			font-size: 9px
+		@media (max-width: 1199.98px)
+			padding: 10px 10px 14px
+		.dsi-steps
+			font-weight: 500
+			display: inline-block
+			width: 40px
+			height: 40px
+			text-align: center
+			line-height: 36px
+			vertical-align: middle
+			border-radius: 100px
+			border: 2px solid #BDBDBD
+			color: #828282
+			@media (max-width: 991.98px)
+				width: 26px
+				height: 26px
+				font-size: 9px
+				line-height: 23px
+		.dsi-text-steps
+			text-transform: uppercase
+			font-weight: 600
+			color: #828282
+		&.current
+			.dsi-steps
+				border-color: $color-primary
+				color: $color-primary
+			.dsi-text-steps
+				color: $color-primary
+			&:before 
+				content: ""
+				display: inline-block
+				position: absolute
+				bottom: 0
+				left: 0
+				right: 0
+				height: 4px
+				background: $color-primary
+		&.done
+			.dsi-steps
+				position: relative
+				border-color: $color-primary
+				&:after 
+					content: ""
+					display: inline-block
+					position: absolute
+					top: -2px
+					bottom: -2px
+					left: -2px
+					right: -2px
+					background-color: $color-primary
+					border-radius: 100px
+					background-image: url(../img/check-big.svg)
+					background-size: 14px 10px
+					background-repeat: no-repeat
+					background-position: center center
+			.dsi-text-steps
+				color: $color-primary
+	[class*="col"]:not(:last-child)
+		.dsi-status-cart
+			position: relative
+			@media (min-width: 1200px)
+				&:after 
+					content: "" 
+					position: absolute
+					top: 0
+					right: -10px
+					width: 10px
+					height: 80px
+					background-image: url(../img/arrow-steps.svg)
+					background-size: cover
+					background-repeat: no-repeat
+					background-position: center center
+
+.dsi-dashboard-dropdown
+	.dropdown-toggle
+		padding: 10px 40px 10px 16px
+		border-radius: 6px
+		&:after 
+			display: none
+	.dropdown-menu
+		margin-top: 8px
+		right: 0 !important
+		left: auto !important
+		padding: 4px 0
+		border-radius: 6px
+		border: 0
+		transform: translate3d(0px, 41px, 0px) !important
+		min-width: 224px !important
+		box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.05)
+		background-color: $color-white
+		@media (max-width: 767.98px)
+			left: 0 !important
+			right: auto !important
+			margin-top: 16px
+			min-width: 170px !important
+		.dropdown-item
+			font-size: 14px
+			padding: 8px 16px
+			font-family: $Inter
+			color: #374151
+			&:hover, &:active
+				font-weight: bold
+				background: initial
+				opacity: 1
+	.fa-chevron-right
+		position: absolute
+		color: $color-white
+		top: 50%
+		transform: translateY(-50%) rotate(90deg)
+		right: 22px
+		transition: $transition
+		font-size: 10px
+
+.dsi-block-dashed
+	border: 2px dashed $color-form-border
+	background: $color-card-bg
+	height: 100%
+	min-height: 220px
+	img 
+		width: 100%
+
+.dsi-section-404
+	margin-top: 100px
+	@media (max-width: 767.98px)
+		margin-top: 160px
+		.container-404
+			max-width: 100%
+	@media (max-width: 575.98px)
+		margin-top: 120px
+
+.dsi-dropdown-sort
+	.dropdown-toggle
+		&:after 
+			display: none
+	.dropdown-menu
+		margin-top: 8px
+		left: -40px 
+		padding: 4px 0
+		border-radius: 8px
+		border: 0
+		box-shadow: $box-navbar
+		background-color: $color-card-bg
+		@media (max-width: 1199.98px)
+			left: 0
+			width: auto
+			max-width: 285px
+		.dropdown-item
+			font-size: 16px
+			font-weight: bold
+			padding: 8px 16px
+			white-space: initial
+			color: $color-primary
+			&:hover, &.active
+				background-color: $color-card-bg !important
+			&.active
+				font-family: $FuturaPT-Bold
+	&.dsi-dropdown-hover
+		.dropdown-menu
+			@media (min-width: 1200px)
+				margin-top: -1px
+				display: none
+				&:hover 
+					display: block
+		.dropdown-toggle
+			@media (min-width: 1200px)
+				&:hover
+					~.dropdown-menu
+						display: block
+
+.dsi-dropdown-sort-2
+	.dropdown-toggle
+		font-family: $FuturaPT-Bold
+	.dropdown-menu
+		left: -18px !important
+		padding: 4px 0
+		min-width: 132px
+		@media (max-width: 1199.98px)
+			left: -28px !important
+		@media (max-width: 575.98px)
+			left: -18px !important
+			top: -10px !important
+		.dropdown-item
+			font-size: 18px
+			display: block
+			text-align: right
+			@media (max-width: 1199.98px)
+				font-size: 14px
+	&.show
+		.fa-chevron-right
+			transform: translateY(-50%) rotate(270deg)
+
+.dsi-dropdown-categories
+	.dropdown-toggle
+		font-size: 18px
+		padding: 8px 16px
+		font-family: $FuturaPT-Bold
+		@media (max-width: 767.98px)
+			font-size: 14px
+		.fa-chevron-right
+			@media (min-width: 768px)
+				font-size: 14px
+				top: 20px
+	.dropdown-menu
+		left: 0
+		min-width: 150px
+		.dropdown-item
+			display: block
+			@media (max-width: 767.98px)
+				font-size: 14px
+	&.show
+		.fa-chevron-right
+			transform: translateY(-50%) rotate(270deg)
+
+.dsi-sort-by-small
+	font-size: 14px
+	padding-right: 16px
+	.fa-chevron-right
+		top: 18px
+		right: 0
+		font-size: 10px
+	~ .dropdown-menu
+		left: -28px !important
+		.dropdown-item
+			font-size: 14px 
+			font-family: $FuturaPT-Book
+			&.active 
+				font-family: $FuturaPT-Bold
+
+.modal
+	@media (min-width: 1200px)
+		padding-left: 256px
+	.modal-content
+		border-radius: 8px
+		font-family: $Inter
+		padding: 5px 0
+		.modal-top
+			font-size: 18px
+			color: $color-primary
+			text-align: center
+			font-weight: bold
+			padding: 27px 16px 27px
+		.modal-body
+			background: #FAFAFA
+			padding: 12px 15px
+			.dsi-content
+				font-size: 16px
+				font-weight: bold 
+				color: #4F4F4F
+				padding: 18px 0
+				text-align: center
+			.dsi-author
+				color: $color-primary
+				font-weight: 500
+				.name 
+					font-size: 18px
+					@media (max-width: 575.98px)
+						font-size: 16px
+				.post
+					font-size: 14px
+					color: $color-primary
+					@media (max-width: 575.98px)
+						font-size: 12px
+				.dsi-avatar-modal
+					width: 80px
+					height: 80px
+					border-radius: 100px
+					background-color: #949799
+					background-size: cover
+					background-position: center center
+					@media (max-width: 575.98px)
+						width: 60px
+						height: 60px
+		.modal-bottom
+			padding: 27px 16px
+			.btn
+				@media (max-width: 767.98px)
+					display: block
+					width: 100%

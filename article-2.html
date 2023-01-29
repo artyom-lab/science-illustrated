@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DSI</title>
+    <link rel="stylesheet" href="libs/Bootstrap/bootstrap-4.3.1.css">
+    <link rel="stylesheet" href="libs/FontAwesome/css/all.css">
+    <link rel="stylesheet" href="libs/OwlCarousel/OwlCarousel-22.3.4.css">
+    <link rel="stylesheet" href="libs/OwlCarousel/OwlCarousel-22.3.4-owl.theme.css">
+    <link rel="stylesheet" href="libs/Select/select2@4.1.0-rc.0.css">
+    <link rel="stylesheet" href="libs/Waves/node-waves-0.7.6.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-sticky navbar-expand-xl fixed-top">
+    <div class="container">
+      <a href="#!" class="navbar-brand"><img src="img/logo.svg"></a>
+      <a href="#!" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+        <span></span>
+      </a>
+      <div class="collapse navbar-collapse">
+        <form class="form-inline dsi-form-search dsi-form-search-dropdown dropdown mx-auto">
+          <input class="form-control dropdown-toggle" data-toggle="dropdown" type="text" placeholder="Search for articles...">
+          <a href="#!" class="dsi-search"></a>
+
+          <div class="dropdown-menu dsi-search-dropdown w-100">
+            <div class="pt-4 px-4 pb-3 dsi-loc-border">
+              <h5>Articles</h5>
+              <div class="dsi-article">
+                <div class="row dsi-row-1 align-items-center position-relative">
+                  <div class="col-auto dsi-fz-0">
+                    <div href="#!" class="dsi-avatar" style="background-image: url(img/avatar.jpg)"></div>
+                  </div>
+                  <div class="col position-static dsi-long-text">
+                    <a href="#!" class="font-weight-bold stretched-link">Data-Driven Insights and Educational...</a>
+                    <div class="dsi-fz-14 dsi-lh-1">Sebastien Lemieux-Codere</div>
+                  </div>
+                </div>
+              </div>
+              <div class="dsi-article">
+                <div class="row dsi-row-1 align-items-center position-relative">
+                  <div class="col-auto dsi-fz-0">
+                    <div href="#!" class="dsi-avatar" style="background-image: url(img/avatar.jpg)"></div>
+                  </div>
+                  <div class="col position-static">
+                    <a href="#!" class="font-weight-bold stretched-link">Building Simple Multilingual Content...</a>
+                    <div class="dsi-fz-14 dsi-lh-1">Sebastien Lemieux-Codere</div>
+                  </div>
+                </div>
+              </div>
+              <div class="dsi-article">
+                <div class="row dsi-row-1 align-items-center position-relative">
+                  <div class="col-auto dsi-fz-0">
+                    <div href="#!" class="dsi-avatar" style="background-image: url(img/avatar.jpg)"></div>
+                  </div>
+                  <div class="col position-static">
+                    <a href="#!" class="font-weight-bold stretched-link">6 Ways to get News Data Online</a>
+                    <div class="dsi-fz-14 dsi-lh-1">Max Forslund</div>
+                  </div>
+                </div>
+              </div>
+              <h5 class="mt-3">People</h5>
+              <div class="dsi-article">
+                <div class="row dsi-row-1 align-items-center position-relative">
+                  <div class="col-auto dsi-fz-0">
+                    <div href="#!" class="dsi-avatar dsi-avatar-2" style="background-image: url(img/avatar.jpg)"></div>
+                  </div>
+                  <div class="col position-static dsi-long-text">
+                    <a href="#!" class="font-weight-bold stretched-link">Max Forslund</a>
+                  </div>
+                </div>
+              </div>
+              <div class="dsi-article">
+                <div class="row dsi-row-1 align-items-center position-relative">
+                  <div class="col-auto dsi-fz-0">
+                    <div href="#!" class="dsi-avatar dsi-avatar-2" style="background-image: url(img/avatar.jpg)"></div>
+                  </div>
+                  <div class="col position-static dsi-long-text">
+                    <a href="#!" class="font-weight-bold stretched-link">Sebastien Lemieux-Codere</a>
+                  </div>
+                </div>
+              </div>
+              <h5 class="my-3">Article Topcis</h5>
+              <div class="mb-2"><a href="#!" class="dsi-pill">Machine Learning</a></div>
+              <div class="mb-2"><a href="#!" class="dsi-pill">Statistics</a></div>
+              <div class="mb-2"><a href="#!" class="dsi-pill">Data mining</a></div>
+              <div class="mb-2"><a href="#!" class="dsi-pill">Artificial intelligence</a></div>
+            </div>
+          </div>
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown dsi-dropdown-sort dsi-dropdown-hover">
+            <a class="nav-link dropdown-toggle active" href="#!" data-toggle="dropdown">Articles</a>
+            <div class="dropdown-menu">
+              <a href="#!" class="dropdown-item">Visualizations</a>
+              <a href="#!" class="dropdown-item">Machine Learning</a>
+              <a href="#!" class="dropdown-item">Statistics</a>
+              <a href="#!" class="dropdown-item">Technology</a>
+              <a href="#!" class="dropdown-item">Data</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse dsi-collapse mt-auto">
+      <div class="container px-0">
+        <div class="dsi-social-links mt-2">
+          <div class="row justify-content-center pb-4">
+            <div class="col-auto">
+              <a href="#!" class="fab fa-facebook"></a>
+            </div>
+            <div class="col-auto">
+              <a href="#!" class="fab fa-twitter"></a>
+            </div>
+            <div class="col-auto">
+              <a href="#!" class="fab fa-linkedin-in"></a>
+            </div>
+          </div>
+          <div class="text-center dsi-text-primary dsi-inter">© 2021 Data Science Illustrated</div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="dsi-section-1">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="mx-sm-5">
+            <h2 class="dsi-lh-15">Building Simple Multilingual Content Classification Models from Small Training Datasets</h2>
+            <div class="pt-2 dsi-posted dsi-posted-2">6 June 2021 · Posted by <b><a href="#!" class="dsi-text-primary">Sebastien</a></b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-3">
+    <div class="d-sm-none text-center"><img src="img/vectors-2.jpg" class="w-100" alt=""></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="d-none d-sm-block text-center"><img src="img/vectors.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-3">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="dsi-georgia dsi-lh-17 dsi-fz-18 mb-5">
+            <p>This article demonstrates a simple method that can be used to train content classification models with small training datasets that work across many languages that were not part of the training data. It attains an approximately 96% test set accuracy on the BBC news categorization dataset training on approximately 20 english news article examples per news category.</p>
+            <p>Furthermore, many of the classification errors are arguably not errors because the article reasonably fits both the label category and the predicted category. For example, an article about a technology business might be labelled as a business article but classified as a technology article by the model. This would be counted as an error in the model evaluation even though both categorizations are arguably correct. You can see a Jupyter notebook implementing the method here.</p>
+            <p>The final model can be used on 16 languages (Arabic, Chinese-simplified, Chinese-traditional, English, French, German, Italian, Japanese, Korean, Dutch, Polish, Portuguese, Spanish, Thai, Turkish, Russian) even though it was only trained with english examples. It does so by using transfer learning with the Multilingual Universal Sentence Encoder from Tensorflow Hub followed by a dropout regularization layer and a dense output layer. The Multilingual Universal Sentence Encoder (described in this paper) is a pre-trained Convolutional Neural Network that embeds text from 16 languages into a single shared 512 dimensional semantic embedding vector space. This semantic embedding space contains high level semantic features from which simple models that do not require much training data can be trained to perform various tasks. Building models to perform those same tasks equally well using raw text data as input would require much more training data.</p>
+            <p>Simple machine learning models for tasks like content classification or tagging can then be trained using these embeddings as input using small training datasets and only a few lines of code:</p>
+            <div class="pb-2">
+              <img src="img/img-coding.jpg" alt="">
+            </div>
+            <p>As a demo of the model’s multilingual capabilities, the sentence “The stock market crashed after the announcement” is classified as business, and so is its french translation: “La bourse s'est effondrée après l'annonce” and its spanish translation: “ El mercado de valores se desplomó tras el anuncio”. You can find more examples of multilingual classification at the end of the example notebook.</p>
+            <p class="font-weight-bold">To conclude, the main appeal of this content classification approach is that it is simple, requires a relatively small amount of training data and works on many languages even if they are not present in the training dataset.</p>
+          </div>
+          <div>
+            <div class="row dsi-row-3 align-items-center">
+              <div class="col-xl-4 mb-3 mb-xl-0">
+                <div class="row dsi-row-4 align-items-center">
+                  <div class="col-auto">
+                    <div class="dsi-img-wrap dsi-img-wrap-circle align-middle"> 
+                      <div href="#!" class="dsi-avatar-big dsi-avatar-100 dsi-bg-wrap" style="background-image: url(img/avatar.jpg)"></div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="dsi-fz-13 dsi-font-weight-bold mb-2">The Author</div>
+                    <h3 class="dsi-fz-16"><a href="#!" class="dsi-text-primary">Sebastien Lemieux-Codere</a></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 mb-3 mb-xl-0">
+                <div class="row dsi-row-4 align-items-center">
+                  <div class="col-auto">
+                    <div class="dsi-img-wrap dsi-img-wrap-circle align-middle"> 
+                      <div href="#!" class="dsi-avatar-big dsi-avatar-100 dsi-bg-wrap" style="background-image: url(img/avatar.jpg)"></div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="dsi-fz-13 dsi-font-weight-bold mb-2">The Author</div>
+                    <h3 class="dsi-fz-16"><a href="#!" class="dsi-text-primary">Sebastien Lemieux-Codere</a></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="row dsi-row-4 align-items-center">
+                  <div class="col-auto">
+                    <div class="dsi-img-wrap dsi-img-wrap-circle align-middle"> 
+                      <div href="#!" class="dsi-avatar-big dsi-avatar-100 dsi-bg-wrap" style="background-image: url(img/avatar.jpg)"></div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="dsi-fz-13 dsi-font-weight-bold mb-2">The Author</div>
+                    <h3 class="dsi-fz-16"><a href="#!" class="dsi-text-primary">Sebastien Lemieux-Codere</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-5">
+            <div class="col-md-10">
+              <div class="dsi-fz-24 text-center dsi-font-weight-bold dsi-text-primary mb-4">Share this article</div>
+              <div class="row justify-content-center">
+                <div class="col-4 col-sm-3 col-lg mb-4">
+                  <a href="#!" class="btn dsi-btn-social btn-block">
+                    <span class="fab fa-facebook align-middle mr-1"></span>
+                    <span class="align-middle d-none d-lg-inline">Facebook</span>
+                  </a>
+                </div>
+                <div class="col-4 col-sm-3 col-lg mb-4">
+                  <a href="#!" class="btn dsi-btn-social btn-block">
+                    <span class="fab fa-twitter align-middle mr-1"></span>
+                    <span class="align-middle d-none d-lg-inline">Twitter</span>
+                  </a>
+                </div>
+                <div class="col-4 col-sm-3 col-lg mb-4">
+                  <a href="#!" class="btn dsi-btn-social btn-block">
+                    <span class="fab fa-linkedin-in align-middle mr-1"></span>
+                    <span class="align-middle d-none d-lg-inline">Linkedin</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="dsi-slide shadow-none text-center py-4">
+        <div class="overflow-hidden">
+          <h2 class="h2 mb-1">Related articles</h2>
+        </div>
+      </div>
+
+      <div class="row dsi-carts dsi-row-4 pr-sm-0 mt-4 pb-2">
+        <div class="col-6 col-sm-4">
+          <div class="dsi-cart dsi-slide">
+            <div class="dsi-img-wrap"> 
+              <div class="dsi-bg-img-cart dsi-bg-wrap" style="background-image: url(img/img2.jpg)">
+              </div>
+            </div>
+            <div class="dsi-block">
+              <div class="h5 "><a href="#!" class="dsi-text-primary">Building Simple Multilingual Content Classification Models from Small...</a></div>
+              <div class="pt-2 text-xl-center dsi-posted dsi-posted-2">6 June 2021 · Posted by <b><a href="#!" class="dsi-text-primary">Sebastien</a></b></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4">
+          <div class="dsi-cart dsi-slide">
+            <div class="dsi-img-wrap"> 
+              <div class="dsi-bg-img-cart dsi-bg-wrap" style="background-image: url(img/img2.jpg)">
+              </div>
+            </div>
+            <div class="dsi-block">
+              <div class="h5"><a href="#!" class="dsi-text-primary">Building Simple Multilingual Content Classification Models from Small...</a></div>
+              <div class="pt-2 text-xl-center dsi-posted dsi-posted-2">6 June 2021 · Posted by <b><a href="#!" class="dsi-text-primary">Sebastien</a></b></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4">
+          <div class="dsi-cart dsi-slide">
+            <div class="dsi-img-wrap"> 
+              <div class="dsi-bg-img-cart dsi-bg-wrap" style="background-image: url(img/img2.jpg)">
+              </div>
+            </div>
+            <div class="dsi-block">
+              <div class="h5"><a href="#!" class="dsi-text-primary">Building Simple Multilingual Content Classification Models from Small...</a></div>
+              <div class="pt-2 text-xl-center dsi-posted dsi-posted-2">6 June 2021 · Posted by <b><a href="#!" class="dsi-text-primary">Sebastien</a></b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-4 pb-2">
+    <div class="container">
+      <div class="dsi-notify-block">
+        <div class="row dsi-row-3 align-items-xl-center justify-content-center justify-content-xl-start">
+          <div class="col-auto dsi-fz-0 d-none d-xl-block">
+            <img src="img/points-blue.svg" alt="">
+          </div>
+          <div class="col-sm-10 col-md-7 col-xl-6">
+            <div class="text-center text-xl-left">
+              <div class="h4">Want the latest Data Science news and articles?</div>
+              <h4>Sign up for our newsletter.</h4>
+            </div>
+            <form>
+              <div class="row dsi-row-3 mt-5">
+                <div class="col-xl">
+                  <input type="email" class="form-control" placeholder="Enter your email">
+                </div>
+                <div class="col-xl-auto mt-3 mt-xl-0">
+                  <button class="btn dsi-btn-notify btn-block">Notify me</button>
+                </div>
+              </div>
+            </form>
+            <div class="dsi-privacy mt-3 d-xl-none">We care about the protection of your data. Read our <a href="#!">Privacy Policy.</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="dsi-footer d-none d-xl-block">
+    <div class="container">
+      <a href="#!" class="navbar-brand">
+        <img src="img/footer.svg">
+      </a>
+      <div class="row dsi-row-1 justify-content-center pt-5 pb-3">
+        <div class="col-2">
+          <div class="overflow-hidden">
+            <div class="mb-1 text-uppercase font-weight-bold">VISUALIZATIONS</div>
+          </div>
+          <div class="dsi-links mt-4 pt-3">
+            <div class="mb-4 pb-3">
+              <a href="#!">Content</a>
+            </div>
+            <div class="mb-4 pb-3">
+              <a href="#!">Content</a>
+            </div>
+            <div class="mb-4 pb-3">
+              <a href="#!">Content</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="overflow-hidden">
+            <div class="mb-1 text-uppercase font-weight-bold">MACHINE LEARNING</div>
+          </div>
+          <div class="dsi-links mt-4 pt-3">
+            <div class="mb-4 pb-3">
+              <a href="#!">Content</a>
+            </div>
+            <div class="mb-4 pb-3">
+              <a href="#!">Content</a>
+            </div>
+            <div class="mb-4 pb-3">
+              <a href="#!">Content</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="overflow-hidden">
+            <div class="mb-1 text-uppercase font-weight-bold">STATISTICS</div>
+          </div>
+          <div class="dsi-links mt-4 pt-3">
+            <div class="mb-4 pb-3">
+              <a href="#!">Content</a>
+            </div>
+            <div class="mb-4 pb-3">
+              <a href="#!">Content</a>
+            </div>
+            <div class="mb-4 pb-3">
+              <a href="#!">Content</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="overflow-hidden">
+            <div class="mb-1 text-uppercase font-weight-bold">TECHNOLOGY</div>
+          </div>
+          <div class="dsi-links mt-4 pt-3">
+            <div class="mb-4 pb-3">
+              <a href="#!">Content</a>
+            </div>
+            <div class="mb-4 pb-3">
+              <a href="#!">Content</a>
+            </div>
+            <div class="mb-4 pb-3">
+              <a href="#!">Content</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row dsi-row-2 justify-content-center dsi-links">
+        <div class="col-auto mb-4">
+          <a href="#!">Articles</a>
+        </div>
+        <div class="col-auto mb-4">
+          <a href="#!">Categories</a>
+        </div>
+        <div class="col-auto mb-4">
+          <a href="#!">About</a>
+        </div>
+        <div class="col-auto mb-4">
+          <a href="#!">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="dsi-footer-mobile py-5 px-3 text-white d-xl-none">
+    <div class="container">
+      <div class="row dsi-row-6 justify-content-center dsi-links">
+        <div class="col-auto mb-4 pb-3">
+          <a href="#!">Articles</a>
+        </div>
+        <div class="col-auto mb-4 pb-3">
+          <a href="#!">About</a>
+        </div>
+        <div class="col-auto mb-4 pb-3">
+          <a href="#!">Contact</a>
+        </div>
+      </div>
+      <div class="dsi-social-links-2 mt-2">
+        <div class="row justify-content-center pb-4">
+          <div class="col-auto">
+            <a href="#!" class="fab fa-facebook"></a>
+          </div>
+          <div class="col-auto">
+            <a href="#!" class="fab fa-twitter"></a>
+          </div>
+          <div class="col-auto">
+            <a href="#!" class="fab fa-linkedin-in"></a>
+          </div>
+        </div>
+        <div class="text-center dsi-text-social dsi-inter">© 2021 Data Science Illustrated</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="libs/Jquery/jquery-3.3.1.js"></script>
+  <script src="libs/Popper/popper.js-1.14.7.js"></script>
+  <script src="libs/Bootstrap/bootstrap-4.3.1.js"></script>
+  <script src="libs/OwlCarousel/OwlCarousel-22.3.4.js"></script>
+  <script src="libs/Select/select2@4.1.0-rc.0.js"></script>
+  <script src="libs/Waves/node-waves-0.7.6.js"></script>
+  <script src="libs/Drag-on-drop/drag-on-drop@3.3.2.js"></script>
+  <script src="js/common.js"></script>
+
+</body>
+</html>
+
